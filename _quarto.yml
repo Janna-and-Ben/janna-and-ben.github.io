@@ -3,12 +3,14 @@ project:
 
 website:
   site-url: https://Janna-and-Ben.github.io
-  navbar:
+  navbar: 
     right:
-      - href: https://Janna-and-Ben.github.io/index.html
-        text: ENGLISH
-      - href: https://Janna-and-Ben.github.io/de/index.html
-        text: DEUTSCH
+      - text: "HOME"
+        href: index.html
+  #     - href: https://Janna-and-Ben.github.io/index.html
+  #       text: ENGLISH
+  #     - href: https://Janna-and-Ben.github.io/de/index.html
+  #       text: DEUTSCH
 
 format:
   html:
@@ -16,17 +18,20 @@ format:
     include-after-body:
       - file: hero.html
     toc: false
+
 lightbox: true
 
 babelquarto:
-  languagelinks: sidebar
+  languagelinks: navbar
   languagecodes:
-  - name: de
-    text: "DE"
-  - name: en
-    text: "ENG"
-  mainlanguage: 'en'
-  languages: ['de']
+    - name: de
+      text: "DEUTSCH"
+    - name: en
+      text: "ENGLISH"
+  mainlanguage: en
+  languages: 
+    - de
+
 lang: en
 
 execute:
