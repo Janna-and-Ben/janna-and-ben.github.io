@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  site-url: https://Janna-and-Ben.github.io
+  navbar:
+    right:
+      - href: https://Janna-and-Ben.github.io/index.html
+        text: ENGLISH
+      - href: https://Janna-and-Ben.github.io/de/index.html
+        text: DEUTSCH
+
+format:
+  html:
+    theme: [cosmo, brand, styles.scss]
+    include-after-body:
+      - file: hero.html
+    toc: false
+lightbox: true
+
+babelquarto:
+  languagelinks: sidebar
+  languagecodes:
+  - name: de
+    text: "DE"
+  - name: en
+    text: "ENG"
+  mainlanguage: 'en'
+  languages: ['de']
+lang: en
+
+execute:
+  echo: false
+  warning: false
+  error: false

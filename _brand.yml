@@ -1,0 +1,23 @@
+color:
+  palette:
+    dark-grey: "#222222"
+    blue: "#ddeaf1"
+    yellow: "#FFC806"
+    offwhite: "#F7F7EF"
+    green: "#586048"
+    tan: "#d1af82"
+  background: offwhite
+  foreground: green
+  primary: offwhite
+  link: green
+
+logo: 
+  medium: logo.png
+
+typography:
+  fonts:
+    - family: Playfair Display
+      source: google
+    - family: Bright Demo
+  base: Playfair Display
+  headings: Playfair Display

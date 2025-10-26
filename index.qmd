@@ -1,0 +1,38 @@
+---
+format: html
+page-layout: full
+---
+::: {.hero}
+# Janna and Ben's Wedding
+
+<div></div> <!-- spacer -->
+[RSVP](https://Janna-and-Ben.github.io/index.html#rsvp){.hero-btn}
+:::
+
+# The Location {.section-title}
+
+We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wandlitz](https://www.farmhousewandlitz.com/), located just outside of Berlin. Below you can find a map to help you find the venue. If you are travelling via Public transport from Berlin the Basdorf station is the closest stop, from there it is a 8 minute walk to the venue.
+
+::: {.full-map}
+<iframe
+  src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Farmhouse wandlitz&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  class="gmap_iframe">
+</iframe>
+:::
+
+# The Day Of {.section-title}
+<!-- bullet point agenda here -->
+
+# For those staying with us {.section-title}
+<!-- info for those arriving on Tuesday and staying until Thursday -->
+
+## Nearby Accommodation {.section-title}
+
+::: {.rsvp-section}
+# RSVP Here {.section-title}
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQDhR8QXycW7fzdvty_sV5ArX5RcyV-sA0XwfE2L0vOhDZsw/viewform?embedded=true" width="640" height="1044" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+:::
