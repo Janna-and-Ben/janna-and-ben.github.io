@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  site-url: https://Janna-and-Ben.github.io
+  site-url: https://janna-and-ben.github.io
   navbar: 
     right:
       - text: "HOME"
