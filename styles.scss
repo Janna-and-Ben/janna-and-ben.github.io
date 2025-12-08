@@ -327,3 +327,74 @@ h1.section-title {
 .bsb-timeline-2 [data-anchorjs-icon]::after {
   content: none !important;
 }
+
+// Wedding Countdown Timer - Simple and Clean
+.wedding-countdown {
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+// .countdown-card - no additional styling needed, just container
+
+.countdown-display {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.countdown-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  padding: 1rem;
+  background: #d1af82;
+  border-radius: 10px;
+  border: 1px solid #d1af82;
+}
+
+.countdown-value {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #F7F7EF;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  color: #F7F7EF;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .countdown-card {
+    margin: 0 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .countdown-title {
+    font-size: 1.5rem;
+  }
+
+  .countdown-display {
+    gap: 0.75rem;
+  }
+
+  .countdown-value {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+
+  .countdown-section {
+    min-width: 70px;
+  }
+}

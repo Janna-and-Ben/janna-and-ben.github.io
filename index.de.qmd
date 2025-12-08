@@ -1,9 +1,39 @@
 ---
+format: html
 page-layout: full
+wedding-date: "July 8, 2026 14:00:00"
+resources:
+  - wedding-countdown.js
 ---
 ::: {.hero}
 # Die Hochzeit von Janna und Ben
 :::
+
+# Bis zur Hochzeit {.section-title}
+
+```{=html}
+<div class="wedding-countdown">
+  <div id="wedding-countdown">
+    <div class="countdown-card">
+      <div class="countdown-display">
+        <div class="countdown-section">
+          <div id="countdown-days" class="countdown-value">00</div>
+          <div class="countdown-label">Tage</div>
+        </div>
+        <div class="countdown-section">
+          <div id="countdown-hours" class="countdown-value">00</div>
+          <div class="countdown-label">Stunden</div>
+        </div>
+        <div class="countdown-section">
+          <div id="countdown-minutes" class="countdown-value">00</div>
+          <div class="countdown-label">Minuten</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 # The Location {.section-title}
 
@@ -21,7 +51,50 @@ We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wan
 :::
 
 # The Day Of {.section-title}
-<!-- bullet point agenda here -->
+```{=html}
+<section class="bsb-timeline-2 py-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8 col-xl-6">
+        <ul class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-icon"><span aria-hidden="true">✓</span></span>
+            <div class="timeline-body">
+              <h2 class="card-title mb-3">12:30 - 1:00pm</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Anmeldung</h2>
+              <p class="card-text m-0">Bitte kommen Sie zum Veranstaltungsort und melden Sie sich am Eingang an.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-icon"><span aria-hidden="true">ℹ</span></span>
+            <div class="timeline-body">
+              <h2 class="card-title mb-3">2:30 - 4:00pm</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Eröffnungszeremonie</h2>
+              <p class="card-text m-0">Begleiten Sie uns zur Zeremonie, wenn wir uns das Ja-Wort geben.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-icon"><span aria-hidden="true">★</span></span>
+            <div class="timeline-body">
+              <h2 class="card-title mb-3">5:00 - 8:00pm</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Hauptveranstaltung</h2>
+              <p class="card-text m-0">Abendessen, Reden und Feier.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-icon"><span aria-hidden="true">⚑</span></span>
+            <div class="timeline-body">
+              <h2 class="card-title mb-3">8:30 - 9:30pm</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Abschlusszeremonie</h2>
+              <p class="card-text m-0">Verabschiedungen und sichere Heimreise.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+```
 
 # For those staying with us {.section-title}
 <!-- info for those arriving on Tuesday and staying until Thursday -->
@@ -32,3 +105,8 @@ We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wan
 # RSVP Here {.section-title}
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQDhR8QXycW7fzdvty_sV5ArX5RcyV-sA0XwfE2L0vOhDZsw/viewform?embedded=true" width="640" height="1044" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 :::
+
+```{=html}
+<meta name="wedding-date" content="{{< meta wedding-date >}}">
+<script src="wedding-countdown.js"></script>
+```

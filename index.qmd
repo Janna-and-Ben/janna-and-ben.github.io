@@ -1,6 +1,9 @@
 ---
 format: html
 page-layout: full
+wedding-date: "July 8, 2026 14:00:00"
+resources:
+  - wedding-countdown.js
 ---
 
 :::: hero
@@ -12,6 +15,34 @@ page-layout: full
 
 <!-- spacer --> [RSVP](https://Janna-and-Ben.github.io/index.html#rsvp){.hero-btn}
 ::::
+
+<div style="margin-top: 4rem;"></div>
+
+# Until the Wedding {.section-title}
+
+```{=html}
+<div class="wedding-countdown">
+  <div id="wedding-countdown">
+    <div class="countdown-card">
+      <div class="countdown-display">
+        <div class="countdown-section">
+          <div id="countdown-days" class="countdown-value">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-section">
+          <div id="countdown-hours" class="countdown-value">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-section">
+          <div id="countdown-minutes" class="countdown-value">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 # The Location {.section-title}
 
@@ -75,6 +106,9 @@ We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wan
 
 ## Nearby Accommodation {.section-title}
 
+# Gallery {.section-title}
+
+
 ::: rsvp-section
 # RSVP Here {.section-title}
 
@@ -84,3 +118,8 @@ Loading…
 
 </iframe>
 :::
+
+```{=html}
+<meta name="wedding-date" content="{{< meta wedding-date >}}">
+<script src="wedding-countdown.js"></script>
+```
