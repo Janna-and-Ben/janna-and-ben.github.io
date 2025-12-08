@@ -2,13 +2,20 @@
 
 /*-- scss:rules --*/
 
-h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   color: $brand-tan;
   text-decoration: none;
+  border-bottom: none;
 }
 
-.navbar-brand, .navbar-title {
+.navbar-brand,
+.navbar-title {
   font-family: 'Bright Demo';
   font-size: 1.6rem;
   font-weight: 600;
@@ -22,7 +29,8 @@ h2, h3, h4, h5, h6 {
 }
 
 .navbar a {
-  font-weight: 700;   /* bold */
+  font-weight: 700;
+  /* bold */
 }
 
 .hero {
@@ -31,7 +39,7 @@ h2, h3, h4, h5, h6 {
   color: $brand-yellow;
   text-align: center;
   /* 🖼️ Height control */
-  min-height: 60vh;
+  min-height: 80vh;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -39,9 +47,9 @@ h2, h3, h4, h5, h6 {
   /* 🧭 Position text toward the top */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  // move content to top
+  justify-content: flex-start; // move content to top
   align-items: center;
-  padding-top: 2rem;  // add space from top
+  padding-top: 2rem; // add space from top
   padding-bottom: 2rem;
 }
 
@@ -52,36 +60,40 @@ h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 40%; /* controls how much of the top is faded */
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.6),   /* dark at the top */
-    rgba(0, 0, 0, 0)       /* transparent fade */
-  );
-  pointer-events: none; /* keeps overlay from blocking clicks */
+  height: 40%;
+  /* controls how much of the top is faded */
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      /* dark at the top */
+      rgba(0, 0, 0, 0)
+      /* transparent fade */
+    );
+  pointer-events: none;
+  /* keeps overlay from blocking clicks */
   z-index: 1;
 }
 
 /* Ensure text sits above the fade */
-.hero > * {
+.hero>* {
   position: relative;
   z-index: 2;
 }
 
 /* 🪶 Larger and more elegant typography */
 .hero h1 {
-  font-size: 5rem;       // increase headline size
+  font-size: 5rem; // increase headline size
   font-weight: 700;
   margin-bottom: 0.2rem;
   text-transform: uppercase;
-  text-transform: uppercase;         // optional
-  letter-spacing: 2px;               // optional
+  text-transform: uppercase; // optional
+  letter-spacing: 2px; // optional
 }
 
 .hero p {
   font-size: 1.3rem;
   color: $brand-offwhite;
-  margin-bottom: 0.75rem;  /* 🔧 smaller gap before button */
+  margin-bottom: 0.75rem;
+  /* 🔧 smaller gap before button */
 }
 
 .hero-btn {
@@ -92,17 +104,25 @@ h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
   text-decoration: none;
   padding: 0.8rem 2rem; // increased padding
-  border-radius: 9999px;    // pill shape
+  border-radius: 9999px; // pill shape
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+  /* increase so button doesn't cover face in hero image */
+}
+
+/* Responsive: bring button closer on small screens */
+@media (max-width: 768px) {
+  .hero-btn {
+    margin-top: 1rem;
+  }
 }
 
 /* Hover effect */
 .hero-btn:hover {
   background-color: $brand-offwhite;
   color: $brand-green;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 h1.section-title {
@@ -127,11 +147,16 @@ h1.section-title {
 
 /* Full-width responsive map */
 .full-map {
-  width: 100%;           /* fill the container */
-  max-width: 100vw;      /* full viewport width */
-  height: 60vh;          /* adjust height as needed */
-  margin: 0;             /* remove any default container margin */
-  padding: 0;            /* remove container padding */
+  width: 100%;
+  /* fill the container */
+  max-width: 100vw;
+  /* full viewport width */
+  height: 60vh;
+  /* adjust height as needed */
+  margin: 0;
+  /* remove any default container margin */
+  padding: 0;
+  /* remove container padding */
   overflow: hidden;
 }
 
@@ -149,6 +174,156 @@ h1.section-title {
   right: 0;
 }
 
+/* Scoped timeline styles for .bsb-timeline-2
+   These styles are intentionally scoped under the .bsb-timeline-2
+   namespace so they don't interfere with the rest of the site. */
+.bsb-timeline-2 {
+  padding: 3rem 0;
+  background: transparent;
+  color: $brand-green;
+}
 
+.bsb-timeline-2 .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
+.bsb-timeline-2 .row {
+  display: flex;
+  justify-content: center;
+}
 
+/* simple column sizing within the scoped timeline */
+.bsb-timeline-2 .col-10,
+.bsb-timeline-2 .col-md-8,
+.bsb-timeline-2 .col-xl-6 {
+  width: 100%;
+  max-width: 720px;
+}
+
+.bsb-timeline-2 .timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* vertical center line */
+.bsb-timeline-2 .timeline::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.bsb-timeline-2 .timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 2.25rem;
+}
+
+.bsb-timeline-2 .timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: $brand-tan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.bsb-timeline-2 .timeline-body {
+  margin: 0;
+}
+
+.bsb-timeline-2 .timeline-content .card {
+  border: 0;
+  background: transparent;
+}
+
+.bsb-timeline-2 .card-body {
+  padding: 0;
+}
+
+.bsb-timeline-2 .card-subtitle {
+  /* subtitle: use brand green and slightly larger */
+  color: $brand-green;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+  text-decoration: none;
+}
+
+.bsb-timeline-2 .card-title {
+  /* time/title: larger and prominent */
+  font-size: 1.5rem;
+  color: $brand-tan;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.bsb-timeline-2 .card-text {
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive: reduce left padding and center line on small screens */
+@media (max-width: 640px) {
+  .bsb-timeline-2 .timeline::before {
+    left: 18px;
+  }
+
+  .bsb-timeline-2 .timeline-item {
+    padding-left: 64px;
+  }
+
+  .bsb-timeline-2 .timeline-icon {
+    width: 44px;
+    height: 44px;
+    top: 0.25rem;
+  }
+}
+
+/* Larger typography for timeline on wide screens */
+@media (min-width: 992px) {
+  .bsb-timeline-2 .card-title {
+    font-size: 1.75rem;
+  }
+
+  .bsb-timeline-2 .card-subtitle {
+    font-size: 1.15rem;
+  }
+}
+
+/* Provide fallback for icons when bootstrap icons are not loaded: use simple glyphs */
+.bsb-timeline-2 .timeline-icon>i {
+  font-style: normal;
+}
+
+.bsb-timeline-2 .timeline-icon>span {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Hide anchor/link icons (generated by AnchorJS or Quarto) inside the timeline only */
+.bsb-timeline-2 .anchorjs-link,
+.bsb-timeline-2 .header-anchor,
+.bsb-timeline-2 .quarto-anchor,
+.bsb-timeline-2 a.anchorjs-link {
+  display: none !important;
+}
+
+/* Hide any pseudo-element icons that use data-anchorjs-icon */
+.bsb-timeline-2 [data-anchorjs-icon]::after {
+  content: none !important;
+}

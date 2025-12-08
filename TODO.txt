@@ -1,0 +1,6 @@
+TODO
+- Change form to use surveydown package: https://pkg.surveydown.org/
+- Add a quarto carousel of nearby accommodations
+- Add a gallery with pics of farmhouse wandlitz using same structure as hats of PLUS
+- On the day section: CSS diagram?
+- Add a countdown timer to the wedding date
