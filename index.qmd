@@ -13,7 +13,7 @@ resources:
 
 </div>
 
-<!-- spacer --> [RSVP](https://Janna-and-Ben.github.io/index.html#rsvp){.hero-btn}
+<!-- spacer --> [RSVP](https://janna-and-ben.github.io/index.html#rsvp){.hero-btn}
 ::::
 
 <div style="margin-top: 4rem;"></div>
