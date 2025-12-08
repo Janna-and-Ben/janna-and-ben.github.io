@@ -101,6 +101,8 @@ We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wan
 
 # Accommodation {.section-title}
 
+# Gallery {.section-title}
+
 ::: {.rsvp-section}
 # RSVP Here {.section-title}
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQDhR8QXycW7fzdvty_sV5ArX5RcyV-sA0XwfE2L0vOhDZsw/viewform?embedded=true" width="640" height="1044" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
