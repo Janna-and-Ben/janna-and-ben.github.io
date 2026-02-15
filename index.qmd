@@ -13,10 +13,196 @@ resources:
 
 </div>
 
-<!-- spacer --> [RSVP](https://janna-and-ben.github.io/index.html#rsvp){.hero-btn}
+<!-- spacer -->
+
+[RSVP](https://janna-and-ben.github.io/index.html#rsvp){.hero-btn}
 ::::
 
-<div style="margin-top: 4rem;"></div>
+::: {style="margin-top: 4rem;"}
+:::
+
+# Our Story {.section-title}
+
+```{=html}
+<!-- ============================================ -->
+<!-- Bootstrap Dependencies -->
+<!-- ============================================ -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6F" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4" crossorigin="anonymous"></script>
+
+<!-- ============================================ -->
+<!-- Journey Timeline Carousel -->
+<!-- Shows our story progression through different cities -->
+<!-- ============================================ -->
+<section class="timeline">
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      
+      <!-- Timeline Navigation Buttons -->
+      <!-- Progressive dots and line show journey completion -->
+      <ol class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+          <h4 class="carousel-location-label">Budapest</h4>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+          <h4 class="carousel-location-label">Lesvos</h4>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+          <h4 class="carousel-location-label">Manchester</h4>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+          <h4 class="carousel-location-label">Budapest</h4>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">
+          <h4 class="carousel-location-label">Zürich</h4>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6">
+          <h4 class="carousel-location-label">In Between</h4>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7">
+          <h4 class="carousel-location-label">Berlin</h4>
+        </button>
+      </ol>
+      
+      <!-- Carousel Slides -->
+      <div class="carousel-inner">
+        
+        <!-- Slide 1: Budapest - Where it all began -->
+        <div class="carousel-item active">
+          <div class="experience-slide-one row h-100 align-items-center">
+            <div class="col-md-5">
+              <div class="experience-slide-img">
+                <img class="rounded img-fluid" src="media\Budapest1-1.png" alt="Budapest">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="experience-slide-text">
+                <h3>Budapest 2018</h3>
+                <p>Our story begins in Budapest, where we first met as students at the Central European University. We bonded over our shared love of travel and adventure, and quickly became inseparable. From exploring the city's vibrant culture to embarking on spontaneous road trips, we created countless unforgettable memories together.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2: Lesvos -->
+        <div class="carousel-item">
+          <div class="experience-slide-one row h-100 align-items-center">
+            <div class="col-md-5">
+              <div class="experience-slide-img">
+                <img class="rounded img-fluid" src="media\Greece-2.jpeg" alt="Lesvos">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="experience-slide-text">
+                <h3>Lesvos 2019</h3>
+                <p>Our adventure continued to the beautiful island of Lesvos, where we spent sunny days exploring ancient ruins and swimming in crystal-clear waters. The island's charm and our deepening connection made this trip truly special.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3: Manchester -->
+        <div class="carousel-item">
+          <div class="experience-slide-one row h-100 align-items-center">
+            <div class="col-md-5">
+              <div class="experience-slide-img">
+                <img class="rounded img-fluid" src="media\Manchester-3.jpg" alt="Manchester">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="experience-slide-text">
+                <h3>Manchester 2019</h3>
+                <p>Moving to Manchester brought new experiences and challenges. We discovered cozy cafes, explored the vibrant music scene, and built a life together in this dynamic city.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 4: Back to Budapest -->
+        <div class="carousel-item">
+          <div class="experience-slide-one row h-100 align-items-center">
+            <div class="col-md-5">
+              <div class="experience-slide-img">
+                <img class="rounded img-fluid" src="media\Budapest2-1.jpeg" alt="Budapest Return">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="experience-slide-text">
+                <h3>Back to Budapest 2020</h3>
+                <p>Returning to Budapest felt like coming home. We revisited our favorite spots and created new memories in the city where our story began.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 5: Zurich -->
+        <div class="carousel-item">
+          <div class="experience-slide-one row h-100 align-items-center">
+            <div class="col-md-5">
+              <div class="experience-slide-img">
+                <img class="rounded img-fluid" src="media\Zürich-1.jpg" alt="Zürich">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="experience-slide-text">
+                <h3>Zürich 2020</h3>
+                <p>Zurich welcomed us with stunning alpine views and chocolate-filled adventures. We explored the picturesque old town and enjoyed the perfect blend of nature and city life.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6: Half N Half -->
+        <div class="carousel-item">
+          <div class="experience-slide-one experience-slide-six row h-100 align-items-center">
+            <div class="col-md-8">
+              <div class="experience-slide-img-dual">
+                <img class="rounded img-fluid" src="media\between1.jpg" alt="In Between">
+                <img class="rounded img-fluid" src="media\between2.jpg" alt="In Between">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="experience-slide-text">
+                <h3>Half way between</h3>
+                <p>Now calling Berlin home, we continue our journey together. From the vibrant art scene to the beautiful parks, this city has become the perfect place to start our next chapter.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 7: Berlin - Our current home -->
+        <div class="carousel-item">
+          <div class="experience-slide-one row h-100 align-items-center">
+            <div class="col-md-5">
+              <div class="experience-slide-img">
+                <img class="rounded img-fluid" src="media\Berlin-4.jpg" alt="Berlin">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="experience-slide-text">
+                <h3>Berlin 2024</h3>
+                <p>Now calling Berlin home, we continue our journey together. From the vibrant art scene to the beautiful parks, this city has become the perfect place to start our next chapter.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Carousel Navigation Controls -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+      
+    </div>
+  </div>
+</section>
+```
 
 # Until the Wedding {.section-title}
 
@@ -55,6 +241,7 @@ We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wan
 :::
 
 # The Day Of {.section-title}
+
 ```{=html}
 <section class="bsb-timeline-2 py-5 py-xl-8">
   <div class="container">
@@ -106,8 +293,13 @@ We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wan
 
 ## Nearby Accommodation {.section-title}
 
-# Gallery {.section-title}
+# Let's get you on the dance floor {.section-title}
 
+Add your songs [here](https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=Bi-1cV5xQ0iniM2dmsz-nw&pt=257fb731ce00844d27fcc2f6e8b7aac2&pi=QaondvveQ9uVj)
+
+```{=html}
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6lcvHlV9jRY6rNHZp8keDb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+```
 
 ::: rsvp-section
 # RSVP Here {.section-title}
