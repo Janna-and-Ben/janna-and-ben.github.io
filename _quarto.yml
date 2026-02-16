@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - media/**
 
 website:
   site-url: https://janna-and-ben.github.io
