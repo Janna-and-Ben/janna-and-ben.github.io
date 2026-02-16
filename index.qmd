@@ -72,7 +72,7 @@ resources:
           <div class="experience-slide-one row h-100 align-items-center">
             <div class="col-md-5">
               <div class="experience-slide-img">
-                <img class="rounded img-fluid" src="media\Budapest1-1.png" alt="Budapest">
+                <img class="rounded img-fluid" src="media/Budapest1-1.png" alt="Budapest">
               </div>
             </div>
             <div class="col-md-7">
@@ -89,7 +89,7 @@ resources:
           <div class="experience-slide-one row h-100 align-items-center">
             <div class="col-md-5">
               <div class="experience-slide-img">
-                <img class="rounded img-fluid" src="media\Greece-2.jpeg" alt="Lesvos">
+                <img class="rounded img-fluid" src="media/Greece-2.jpeg" alt="Lesvos">
               </div>
             </div>
             <div class="col-md-7">
@@ -106,7 +106,7 @@ resources:
           <div class="experience-slide-one row h-100 align-items-center">
             <div class="col-md-5">
               <div class="experience-slide-img">
-                <img class="rounded img-fluid" src="media\Manchester-3.jpg" alt="Manchester">
+                <img class="rounded img-fluid" src="media/Manchester-3.jpg" alt="Manchester">
               </div>
             </div>
             <div class="col-md-7">
@@ -123,7 +123,7 @@ resources:
           <div class="experience-slide-one row h-100 align-items-center">
             <div class="col-md-5">
               <div class="experience-slide-img">
-                <img class="rounded img-fluid" src="media\Budapest2-1.jpeg" alt="Budapest Return">
+                <img class="rounded img-fluid" src="media/Budapest2-1.jpeg" alt="Budapest Return">
               </div>
             </div>
             <div class="col-md-7">
@@ -140,7 +140,7 @@ resources:
           <div class="experience-slide-one row h-100 align-items-center">
             <div class="col-md-5">
               <div class="experience-slide-img">
-                <img class="rounded img-fluid" src="media\Zürich-1.jpg" alt="Zürich">
+                <img class="rounded img-fluid" src="media/Zürich-1.jpg" alt="Zürich">
               </div>
             </div>
             <div class="col-md-7">
@@ -157,8 +157,8 @@ resources:
           <div class="experience-slide-one experience-slide-six row h-100 align-items-center">
             <div class="col-md-8">
               <div class="experience-slide-img-dual">
-                <img class="rounded img-fluid" src="media\between1.jpg" alt="In Between">
-                <img class="rounded img-fluid" src="media\between2.jpg" alt="In Between">
+                <img class="rounded img-fluid" src="media/between1.jpg" alt="In Between">
+                <img class="rounded img-fluid" src="media/between2.jpg" alt="In Between">
               </div>
             </div>
             <div class="col-md-4">
@@ -175,7 +175,7 @@ resources:
           <div class="experience-slide-one row h-100 align-items-center">
             <div class="col-md-5">
               <div class="experience-slide-img">
-                <img class="rounded img-fluid" src="media\Berlin-4.jpg" alt="Berlin">
+                <img class="rounded img-fluid" src="media/Berlin-4.jpg" alt="Berlin">
               </div>
             </div>
             <div class="col-md-7">
