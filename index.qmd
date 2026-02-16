@@ -78,7 +78,7 @@ resources:
             <div class="col-md-7">
               <div class="experience-slide-text">
                 <h3>Budapest 2018</h3>
-                <p>Our story begins in Budapest, where we first met as students at the Central European University. We bonded over our shared love of travel and adventure, and quickly became inseparable. From exploring the city's vibrant culture to embarking on spontaneous road trips, we created countless unforgettable memories together.</p>
+                <p>Our story began on the streets of Budapest, when Janna passed Ben on the street before doubling back and introducing herself with a paper map in hand, which Ben found deeply endearing. Our first date took place the very next day, when Janna invited Ben to a cemetery. Where else would a great romance begin? Over the next few months there were long afternoons studying in dubiously decorated university computer rooms, shared dinners at each other’s apartments (one of the only times Janna voluntarily offered to cook). We also went on our first hike together in the Buda Hills, unaware that it would be the first of many outings involving mountains, questionable weather decisions, and an optimistic underestimation of distances. </p>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ resources:
             <div class="col-md-7">
               <div class="experience-slide-text">
                 <h3>Lesvos 2019</h3>
-                <p>Our adventure continued to the beautiful island of Lesvos, where we spent sunny days exploring ancient ruins and swimming in crystal-clear waters. The island's charm and our deepening connection made this trip truly special.</p>
+                <p>The second semester of our master’s degree took us to the island of Lesvos, a move that was more than just geographic, as it also marked the moment we began living together. This brought new experiences, like doing the weekly food shop side by side, although this did not last long, as Ben quickly learned that Janna “helping” with the shopping usually substantially increased the total time required. Much more exciting was our first real holiday together, hiking between coastal towns in Crete with friends, spending long days on steep climbs, fueled by trail mix, and with Janna’s primary form of sun protection being a button-up shirt converted into a headscarf.</p>
               </div>
             </div>
           </div>
