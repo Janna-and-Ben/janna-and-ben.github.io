@@ -100,14 +100,14 @@ h6 {
   display: inline-block;
   background-color: $brand-tan;
   color: $brand-offwhite;
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 800;
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 0.8rem 2rem; // increased padding
   border-radius: 9999px; // pill shape
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin-top: 5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  margin-top: 35rem;
   /* increase so button doesn't cover face in hero image */
 }
 
@@ -130,18 +130,268 @@ h1.section-title {
   font-size: 3.5rem;
   font-weight: 600;
   color: $brand-tan;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
   text-align: center;
 }
 
-.rsvp-section {
-  background-color: $brand-tan;
-  color: $brand-offwhite;
-  padding: 3rem 1rem;
-  text-align: center;
+/* First section title has no top margin */
+h1.section-title:first-of-type {
+  margin-top: 0;
+}
 
-  .section-title {
-    color: $brand-offwhite;
+/* Consistent spacing for all section content */
+.section-title+* {
+  margin-top: 0;
+}
+
+/* Add bottom margin to section containers */
+section,
+.container {
+  margin-bottom: 4rem;
+}
+
+/* Last section has no bottom margin */
+section:last-of-type,
+.container:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Location section - text on top, image and map side by side */
+.general-text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+
+.location-media-row {
+  display: flex !important;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.location-image-col,
+.location-map-col {
+  flex: 0 0 calc(50% - 1rem) !important;
+  max-width: calc(50% - 1rem) !important;
+}
+
+/* Location image styling - match carousel */
+.location-image-col img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Location map styling - match image height */
+.location-map {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.location-map .gmap_iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .location-media-row {
+    flex-direction: column !important;
+  }
+
+  .location-image-col,
+  .location-map-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .location-map-col {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Stay cards with background images and flip effect */
+.stay-card-wrapper {
+  perspective: 1000px;
+  height: 300px;
+}
+
+.stay-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stay-card-wrapper:hover .stay-card {
+  transform: rotateY(180deg);
+}
+
+.stay-card-front,
+.stay-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.stay-card-front {
+  z-index: 2;
+}
+
+.stay-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Force Bootstrap grid to work properly */
+.stay-card .col-md-4 {
+  display: block !important;
+}
+
+.row.g-4 {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1.5rem !important;
+}
+
+/* Mobile: cards stack full width */
+.row.g-4>.col-md-4 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+/* Desktop: all cards on one line regardless of count */
+@media (min-width: 768px) {
+  .row.g-4 {
+    flex-wrap: nowrap !important;
+    gap: 1.5rem !important;
+  }
+
+  .row.g-4>.col-md-4 {
+    flex: 1 1 0 !important;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+}
+
+.card-img-overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-img-overlay-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.stay-card-front .card-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.stay-card-back .card-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.stay-card-back .card-text {
+  color: $brand-offwhite;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.stay-card-front .card-icon {
+  font-size: 3rem;
+  color: $brand-offwhite;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.stay-card-front .card-title,
+.stay-card-front .card-body .card-title,
+.stay-card-front h3.card-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: $brand-offwhite !important;
+  text-align: center !important;
+  margin: 0 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+  display: block !important;
+  line-height: 1.2 !important;
+  padding: 0 !important;
+}
+
+/* Hide any anchor links in card titles */
+.stay-card-front .card-title .anchorjs-link,
+.stay-card-front .card-title .header-anchor,
+.stay-card-front .card-title .quarto-anchor,
+.stay-card-front .card-title a.anchorjs-link {
+  display: none !important;
+}
+
+.stay-card-front .card-title::after {
+  content: none !important;
+}
+
+@media (max-width: 768px) {
+  .stay-card-wrapper {
+    height: 250px;
+  }
+
+  .stay-card-front .card-icon {
+    font-size: 2.5rem;
+  }
+
+  .stay-card-front .card-title,
+  .stay-card-front .card-body .card-title,
+  .stay-card-front h3.card-title {
+    font-size: 1.25rem !important;
+  }
+
+  .stay-card-back .card-text {
+    font-size: 1rem;
   }
 }
 
@@ -178,7 +428,7 @@ h1.section-title {
    These styles are intentionally scoped under the .bsb-timeline-2
    namespace so they don't interfere with the rest of the site. */
 .bsb-timeline-2 {
-  padding: 3rem 0;
+  padding: 0;
   background: transparent;
   color: $brand-green;
 }
@@ -401,7 +651,7 @@ h1.section-title {
 
 /* Our Story Timeline Carousel Styles */
 .timeline {
-  padding: 20px 0px 100px 0px;
+  padding: 0;
 }
 
 .carousel {
@@ -424,9 +674,9 @@ h1.section-title {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 90%;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   gap: 0;
 }
 
@@ -663,15 +913,45 @@ h1.section-title {
   max-width: 40%;
 }
 
-/* Wider layout for slide 6 with dual images */
-.experience-slide-six .col-md-8 {
-  flex: 0 0 75% !important;
-  max-width: 75% !important;
+/* Slide 6: photos side-by-side on top, text full-width below */
+.experience-slide-six {
+  padding: 40px 50px;
 }
 
-.experience-slide-six .col-md-4 {
-  flex: 0 0 25% !important;
-  max-width: 25% !important;
+.experience-slide-six .experience-slide-img-dual {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-right: 0;
+}
+
+.experience-slide-six .experience-slide-img-dual img {
+  width: calc(50% - 0.5rem);
+  height: 380px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience-slide-six-text {
+  padding-left: 0 !important;
+  max-width: 100%;
+}
+
+.experience-slide-six-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $brand-tan;
+  margin-bottom: 0.75rem;
+  border-bottom: none;
+}
+
+.experience-slide-six-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  columns: 2;
+  column-gap: 2rem;
 }
 
 .experience-slide-img {
@@ -760,5 +1040,110 @@ h1.section-title {
 
   .experience-slide-text {
     padding-left: 0;
+  }
+
+  /* Slide 6 mobile: single column text, images stack */
+  .experience-slide-six {
+    padding: 20px !important;
+  }
+
+  .experience-slide-six .experience-slide-img-dual img {
+    height: 200px;
+  }
+
+  .experience-slide-six-text p {
+    columns: 1 !important;
+  }
+
+  /* ── Mobile: vertical timeline to the left of slides ── */
+
+  /* Turn the carousel into a side-by-side flex row */
+  section.timeline .carousel {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    position: relative !important;
+  }
+
+  /* Indicators: narrow vertical column of dots only */
+  section.timeline .carousel-indicators {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 24px !important;
+    flex-shrink: 0 !important;
+    margin: 0 10px 0 4px !important;
+    padding: 8px 0 !important;
+  }
+
+  /* Vertical connecting line down the centre */
+  section.timeline .carousel-indicators::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 8px !important;
+    bottom: 8px !important;
+    width: 2px !important;
+    background: #ddd !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    height: auto !important;
+    z-index: 0 !important;
+  }
+
+  /* Each button: centred dot, spread evenly down the column */
+  section.timeline .carousel-indicators button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: auto !important;
+    flex: 1 !important;
+    position: relative !important;
+    z-index: 1 !important;
+    padding: 0 !important;
+  }
+
+  /* Dots */
+  section.timeline .carousel-indicators button::after {
+    width: 12px !important;
+    height: 12px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Hide per-button horizontal connector lines */
+  section.timeline .carousel-indicators button::before {
+    display: none !important;
+  }
+
+  /* Hide location labels entirely — the slide heading identifies the location */
+  section.timeline .carousel-location-label {
+    display: none !important;
+  }
+
+  /* carousel-inner fills the remaining width */
+  section.timeline .carousel-inner {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+  }
+
+
+  /* Spotify embed wrapper */
+  .spotify-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: $brand-offwhite;
+    border-radius: 1rem;
+    border: 2px solid $brand-tan;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    iframe {
+      border-radius: 0.5rem;
+      display: block;
+    }
   }
 }

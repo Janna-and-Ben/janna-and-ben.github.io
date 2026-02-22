@@ -21,6 +21,32 @@ resources:
 ::: {style="margin-top: 4rem;"}
 :::
 
+# Until the Wedding {.section-title}
+
+```{=html}
+<div class="wedding-countdown">
+  <div id="wedding-countdown">
+    <div class="countdown-card">
+      <div class="countdown-display">
+        <div class="countdown-section">
+          <div id="countdown-days" class="countdown-value">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-section">
+          <div id="countdown-hours" class="countdown-value">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-section">
+          <div id="countdown-minutes" class="countdown-value">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+```
+
 # Our Story {.section-title}
 
 ```{=html}
@@ -30,9 +56,13 @@ resources:
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6F" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4" crossorigin="anonymous"></script>
 
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- ============================================ -->
 <!-- Journey Timeline Carousel -->
 <!-- Shows our story progression through different cities -->
+<!-- ============================================ -->
 <!-- ============================================ -->
 <section class="timeline">
   <div class="container">
@@ -154,18 +184,14 @@ resources:
 
         <!-- Slide 6: Half N Half -->
         <div class="carousel-item">
-          <div class="experience-slide-one experience-slide-six row h-100 align-items-center">
-            <div class="col-md-8">
-              <div class="experience-slide-img-dual">
-                <img class="rounded img-fluid" src="media/between1.jpg" alt="In Between">
-                <img class="rounded img-fluid" src="media/between2.jpg" alt="In Between">
-              </div>
+          <div class="experience-slide-six">
+            <div class="experience-slide-img-dual">
+              <img class="rounded img-fluid" src="media/between1.jpg" alt="In Between">
+              <img class="rounded img-fluid" src="media/between2.jpg" alt="In Between">
             </div>
-            <div class="col-md-4">
-              <div class="experience-slide-text">
-                <h3>The half way between years</h3>
-                <p>Janna started a new job in Berlin, while Ben continued in Zurich. Two years of long-distance journeys back and forth followed, with Deutsche Bahn playing a tempestuous third wheel in our relationship. Countless hours were spent in purgatory on train platforms, waiting for delayed trains throughout Germany (never in Switzerland, of course). Far from being “wilderness years,” this period instead deepened our appreciation for the time we did get to spend together. And without Ben to do the cooking, Janna also rediscovered her love of “girl dinner” and eating chickpeas straight from the can.</p>
-              </div>
+            <div class="experience-slide-text experience-slide-six-text">
+              <h3>The half way between years</h3>
+              <p>Janna started a new job in Berlin, while Ben continued in Zurich. Two years of long-distance journeys back and forth followed, with Deutsche Bahn playing a tempestuous third wheel in our relationship. Countless hours were spent in purgatory on train platforms, waiting for delayed trains throughout Germany (never in Switzerland, of course). Far from being “wilderness years,” this period instead deepened our appreciation for the time we did get to spend together. And without Ben to do the cooking, Janna also rediscovered her love of “girl dinner” and eating chickpeas straight from the can.</p>
             </div>
           </div>
         </div>
@@ -204,80 +230,85 @@ resources:
 </section>
 ```
 
-# Until the Wedding {.section-title}
+# The Location {.section-title}
 
 ```{=html}
-<div class="wedding-countdown">
-  <div id="wedding-countdown">
-    <div class="countdown-card">
-      <div class="countdown-display">
-        <div class="countdown-section">
-          <div id="countdown-days" class="countdown-value">00</div>
-          <div class="countdown-label">Days</div>
-        </div>
-        <div class="countdown-section">
-          <div id="countdown-hours" class="countdown-value">00</div>
-          <div class="countdown-label">Hours</div>
-        </div>
-        <div class="countdown-section">
-          <div id="countdown-minutes" class="countdown-value">00</div>
-          <div class="countdown-label">Minutes</div>
-        </div>
-
+<div class="container">
+  <!-- Text on top -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <p class="general-text">We are excited to celebrate our wedding with you at the beautiful <a href="https://www.farmhousewandlitz.com/" target="_blank">Farmhouse Wandlitz</a>, located just outside of Berlin. Below you can find a map to help you find the venue. If you are travelling via Public transport from Berlin the Basdorf station is the closest stop, from there it is a 8 minute walk to the venue.</p>
+    </div>
+  </div>
+  
+  <!-- Image and Map side by side -->
+  <div class="row location-media-row">
+    <div class="col-md-6 location-image-col">
+      <img src="media/location.jpg" alt="Farmhouse Wandlitz" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6 location-map-col">
+      <div class="location-map">
+        <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Farmhouse wandlitz&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="gmap_iframe"></iframe>
       </div>
     </div>
   </div>
 </div>
 ```
 
-# The Location {.section-title}
-
-We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wandlitz](https://www.farmhousewandlitz.com/), located just outside of Berlin. Below you can find a map to help you find the venue. If you are travelling via Public transport from Berlin the Basdorf station is the closest stop, from there it is a 8 minute walk to the venue.
-
-::: full-map
-<iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Farmhouse wandlitz&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="gmap_iframe">
-
-</iframe>
-:::
-
 # The Day Of {.section-title}
 
 ```{=html}
-<section class="bsb-timeline-2 py-5 py-xl-8">
+<section class="bsb-timeline-2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-10 col-md-8 col-xl-6">
         <ul class="timeline">
           <li class="timeline-item">
-            <span class="timeline-icon"><span aria-hidden="true">✓</span></span>
+            <span class="timeline-icon"><i class="fas fa-door-open"></i></span>
             <div class="timeline-body">
-              <h2 class="card-title mb-3">12:30 - 1:00pm</h2>
-              <h2 class="card-subtitle text-secondary mb-1">Registration</h2>
-              <p class="card-text m-0">Please arrive and register at the venue entrance.</p>
+              <h2 class="card-title mb-3">14:30 - 15:00</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Arrival</h2>
+              <p class="card-text m-0">For those not staying the evening before.</p>
             </div>
           </li>
           <li class="timeline-item">
-            <span class="timeline-icon"><span aria-hidden="true">ℹ</span></span>
+            <span class="timeline-icon"><i class="fas fa-heart"></i></span>
             <div class="timeline-body">
-              <h2 class="card-title mb-3">2:30 - 4:00pm</h2>
-              <h2 class="card-subtitle text-secondary mb-1">Opening Ceremony</h2>
+              <h2 class="card-title mb-3">15:00 - 15:45</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Wedding Ceremony</h2>
               <p class="card-text m-0">Join us for the ceremony as we tie the knot.</p>
             </div>
           </li>
           <li class="timeline-item">
-            <span class="timeline-icon"><span aria-hidden="true">★</span></span>
+            <span class="timeline-icon"><i class="fas fa-cake-candles"></i></span>
             <div class="timeline-body">
-              <h2 class="card-title mb-3">5:00 - 8:00pm</h2>
-              <h2 class="card-subtitle text-secondary mb-1">Main Event</h2>
-              <p class="card-text m-0">Dinner, speeches and celebration.</p>
+              <h2 class="card-title mb-3">15:45 - 18:00</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Reception</h2>
+              <p class="card-text m-0">Afternoon coffee and cake followed by games and time to relax</p>
             </div>
           </li>
           <li class="timeline-item">
-            <span class="timeline-icon"><span aria-hidden="true">⚑</span></span>
+            <span class="timeline-icon"><i class="fas fa-utensils"></i></span>
             <div class="timeline-body">
-              <h2 class="card-title mb-3">8:30 - 9:30pm</h2>
-              <h2 class="card-subtitle text-secondary mb-1">Closing Ceremony</h2>
-              <p class="card-text m-0">Goodbyes and safe travels home.</p>
+              <h2 class="card-title mb-3">18:00 - 20:00</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Dinner</h2>
+              <p class="card-text m-0">A shared dinner together.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-icon"><i class="fas fa-music"></i></span>
+            <div class="timeline-body">
+              <h2 class="card-title mb-3">20:00 - 20:30</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Ceildh</h2>
+              <p class="card-text m-0">A shared dinner together.</p>
+            </div>          
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-icon"><i class="fas fa-champagne-glasses"></i></span>
+            <div class="timeline-body">
+              <h2 class="card-title mb-3">20:30 - Whenever</h2>
+              <h2 class="card-subtitle text-secondary mb-1">Party</h2>
+              <p class="card-text m-0">A shared dinner together.</p>
             </div>
           </li>
         </ul>
@@ -289,27 +320,130 @@ We are excited to celebrate our wedding with you at the beautiful [Farmhouse Wan
 
 # For those staying with us {.section-title}
 
-<!-- info for those arriving on Tuesday and staying until Thursday -->
+```{=html}
+<div class="container">
+  <div class="row g-4">
+    <!-- Card 1: Camping -->
+    <div class="col-md-4">
+      <div class="stay-card-wrapper">
+        <div class="stay-card">
+          <!-- Front of card -->
+          <div class="stay-card-front">
+            <div class="card-img-overlay-bg" style="background-image: url('media/camping.jpg');"></div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="fas fa-campground"></i>
+              </div>
+              <h3 class="card-title">Camping</h3>
+            </div>
+          </div>
+          <!-- Back of card -->
+          <div class="stay-card-back">
+            <div class="card-img-overlay-bg" style="background-image: url('media/camping.jpg');"></div>
+            <div class="card-body">
+              <p class="card-text">Pitch your tent in the beautiful grounds of Farmhouse Wandlitz. Facilities include shared bathrooms and a communal campfire area.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card 2: Glamping -->
+    <div class="col-md-4">
+      <div class="stay-card-wrapper">
+        <div class="stay-card">
+          <!-- Front of card -->
+          <div class="stay-card-front">
+            <div class="card-img-overlay-bg" style="background-image: url('media/yurt.jpg');"></div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="fas fa-tent"></i>
+              </div>
+              <h3 class="card-title">Glamping</h3>
+            </div>
+          </div>
+          <!-- Back of card -->
+          <div class="stay-card-back">
+            <div class="card-img-overlay-bg" style="background-image: url('media/yurt.jpg');"></div>
+            <div class="card-body">
+              <p class="card-text">There are two yurts available with two single beds each/</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <!-- Card 4: On-site rooms -->
+    <div class="col-md-4">
+      <div class="stay-card-wrapper">
+        <div class="stay-card">
+          <!-- Front of card -->
+          <div class="stay-card-front">
+            <div class="card-img-overlay-bg" style="background-image: url('media/room.jpg');"></div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="fas fa-bed"></i>
+              </div>
+              <h3 class="card-title">On-site rooms</h3>
+            </div>
+          </div>
+          <!-- Back of card -->
+          <div class="stay-card-back">
+            <div class="card-img-overlay-bg" style="background-image: url('media/room.jpg');"></div>
+            <div class="card-body">
+              <p class="card-text">Cozy rooms available at the farmhouse with comfortable beds and rustic charm. Limited availability - book early!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card 5: Nearby accomodation -->
+    <div class="col-md-4">
+      <div class="stay-card-wrapper">
+        <div class="stay-card">
+          <!-- Front of card -->
+          <div class="stay-card-front">
+            <div class="card-img-overlay-bg" style="background-image: url('media/hotel.jpg');"></div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="fas fa-hotel"></i>
+              </div>
+              <h3 class="card-title">Nearby accommodation</h3>
+            </div>
+          </div>
+          <!-- Back of card -->
+          <div class="stay-card-back">
+            <div class="card-img-overlay-bg" style="background-image: url('media/hotel.jpg');"></div>
+            <div class="card-body">
+              <p class="card-text">Several hotels are located in nearby Wandlitz and Basdorf. such as <a href="http://www.barnimerhof.de/index.php?lang=de" target="_blank">Hotel Barnimer Hof</a>  .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
-## Nearby Accommodation {.section-title}
+# What to wear and what to bring {.section-title}
 
 # Let's get you on the dance floor {.section-title}
 
-Add your songs [here](https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=Bi-1cV5xQ0iniM2dmsz-nw&pt=257fb731ce00844d27fcc2f6e8b7aac2&pi=QaondvveQ9uVj)
-
 ```{=html}
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6lcvHlV9jRY6rNHZp8keDb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p class="general-text">Add your songs <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=Bi-1cV5xQ0iniM2dmsz-nw&pt=257fb731ce00844d27fcc2f6e8b7aac2&pi=QaondvveQ9uVj" target="_blank">here</a></p>
+
+<div class="spotify-wrapper">
+  <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/6lcvHlV9jRY6rNHZp8keDb?utm_source=generator" width="100%" height="552" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
 ```
 
-::: rsvp-section
 # RSVP Here {.section-title}
+<p class="general-text">Please RSVP by [**31st March**]{.underline} to help us with planning. We hope you can make it!</p>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQDhR8QXycW7fzdvty_sV5ArX5RcyV-sA0XwfE2L0vOhDZsw/viewform?embedded=true" width="640" height="1044" frameborder="0" marginheight="0" marginwidth="0">
-
-Loading…
-
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQDhR8QXycW7fzdvty_sV5ArX5RcyV-sA0XwfE2L0vOhDZsw/viewform?embedded=true" width="100%" height="1044" frameborder="0" marginheight="0" marginwidth="0">
 </iframe>
-:::
 
 ```{=html}
 <meta name="wedding-date" content="{{< meta wedding-date >}}">
