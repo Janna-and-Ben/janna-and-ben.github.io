@@ -27,9 +27,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f8fc0b28f924c818723634fcc28fa75f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-939302b4120d361e4daabdc49be74dd2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-f8fc0b28f924c818723634fcc28fa75f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d56fba646ad71fb3ed86c4965f242b4e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6d70abfb8aa462518401b5b80a6c3e72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d56fba646ad71fb3ed86c4965f242b4e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -443,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section><section id="where-to-stay" class="level1 section-title"><h1 class="section-title">Where to stay</h1>
 <div class="general-text">
-<p>As mentioned, there a variety of accomodation options at the venue itself but also in the nearby town which are described below. Obviously, the number of beds at the venue are limited so have included an option to specify your preference in the <a href="#sec-rsvp">RSVP</a> and we will do our best to try and make everyone’s preferred option work. If you have any questions about accomodation or need help finding something please don’t hesitate to reach out to us.</p>
+<p>As mentioned, there are a variety of accomodation options at the venue itself but also in the nearby town which are described below. Obviously, the number of beds at the venue are limited so we have included an option to specify your preference in the <a href="#sec-rsvp">RSVP</a> and we will do our best to try and make everyone’s preferred option work. If you have any questions about accomodation or need help finding something please don’t hesitate to reach out to us.</p>
 </div>
 
 
@@ -986,5 +986,48 @@ ul.task-list li input[type="checkbox"] {
     }
   });
 </script>
+/**
+ * card-flip.js
+ *
+ * Adds tap/click-to-flip support for .stay-card-wrapper elements.
+ * Drop this script into your project and load it before :
+ *   <script src="card-flip.js"></script>
+ *
+ * Works alongside the SCSS hover rule — on real pointer devices the
+ * hover still fires; on touch devices this class toggle takes over.
+ */
+
+(function () {
+  function initCardFlip() {
+    var wrappers = document.querySelectorAll('.stay-card-wrapper');
+
+    wrappers.forEach(function (wrapper) {
+      wrapper.addEventListener('click', function (e) {
+        // Don't flip if the user tapped a link on the back of the card
+        if (e.target.closest('a')) return;
+
+        wrapper.classList.toggle('is-flipped');
+      });
+
+      // Flip back if focus leaves the card (accessibility)
+      wrapper.addEventListener('focusout', function (e) {
+        if (!wrapper.contains(e.relatedTarget)) {
+          wrapper.classList.remove('is-flipped');
+        }
+      });
+    });
+  }
+
+  // Run after DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCardFlip);
+  } else {
+    initCardFlip();
+  }
+})();
+
+
+
+
 </body>
 </html>
