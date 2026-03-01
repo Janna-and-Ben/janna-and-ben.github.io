@@ -257,6 +257,15 @@ section:last-of-type,
   transform: rotateY(180deg);
 }
 
+.stay-card-back .card-text a {
+  color: $brand-offwhite;
+  text-decoration: underline;
+
+  &:hover {
+    color: $brand-yellow;
+  }
+}
+
 /* Force Bootstrap grid to work properly */
 .stay-card .col-md-4 {
   display: block !important;
@@ -527,6 +536,22 @@ section:last-of-type,
   margin: 0;
 }
 
+/* Spotify embed wrapper */
+.spotify-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: $brand-offwhite;
+  border-radius: 1rem;
+  border: 2px solid $brand-tan;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  iframe {
+    border-radius: 0.5rem;
+    display: block;
+  }
+}
+
 /* Responsive: reduce left padding and center line on small screens */
 @media (max-width: 640px) {
   .bsb-timeline-2 .timeline::before {
@@ -558,6 +583,34 @@ section:last-of-type,
 /* Provide fallback for icons when bootstrap icons are not loaded: use simple glyphs */
 .bsb-timeline-2 .timeline-icon>i {
   font-style: normal;
+}
+
+/* ── Three-timeline layout ── */
+.three-timelines-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.timeline-column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Column title */
+.timeline-column-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $brand-tan;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Center column: extra horizontal padding only */
+.timeline-column-center {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .bsb-timeline-2 .timeline-icon>span {
@@ -1131,19 +1184,14 @@ section:last-of-type,
   }
 
 
-  /* Spotify embed wrapper */
-  .spotify-wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    background-color: $brand-offwhite;
-    border-radius: 1rem;
-    border: 2px solid $brand-tan;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  /* Three-timeline columns: stack vertically on mobile */
+  .three-timelines-wrapper {
+    flex-direction: column !important;
+    gap: 3rem !important;
+  }
 
-    iframe {
-      border-radius: 0.5rem;
-      display: block;
-    }
+  .timeline-column-center {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
