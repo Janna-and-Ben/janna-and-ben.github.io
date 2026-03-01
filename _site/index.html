@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-aa1965b449c27b41a83ebac40d34e5ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0ec0a4bd0ebfde291e011a323e392e15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -329,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-plan" class="level1 section-title">
 <h1 class="section-title">The Plan</h1>
 <div class="general-text">
-<p>We’re only planning on getting married once so we thought why not make a bit of an event of it, especially as many of you will be travelling quite a distance to be there. This is why, we have opted for the rather trendy approach of making it a ‘Woliday’ — a wedding spanning multiple days, allowing us to spend more quality time with all of you. The <a href="#sec-venue">venue</a> is a beautiful farmhouse with accomodation, and plenty of outdoor space, so we’re are looking forward to a relaxed few days full of food, games, and celebrations. You can arrive from mid-afternoon on the 7th of July and stay until midday on the 9th, with the main event itself taking place on the 8th.</p>
+<p>We’re only planning on getting married once so we thought why not make a bit of an event of it, especially as many of you will be travelling quite a distance to be there. This is why, we have opted for the rather trendy approach of making it a ‘Woliday’ — a wedding spanning multiple days, allowing us to spend more quality time with all of you. The <a href="#sec-venue">venue</a> is a beautiful farmhouse with accomodation, and plenty of outdoor space, so we’re are looking forward to a relaxed few days full of food, games, and celebrations. You can arrive from midday on the 7th of July and stay until early afternoon on the 9th, with the main event itself taking place on the 8th.</p>
 <p>Of course, we recognise that not everyone will be able to make it for the whole time, and if you can only come for part of the time e.g the dinner on the night before, or just for the ceremony, that’s absolutely fine. There is no pressure and you’re very welcome to join us for as much or as little as you’d like!</p>
 </div>
 <section class="bsb-timeline-2">
@@ -491,7 +491,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="where-to-stay" class="level1 section-title">
 <h1 class="section-title">Where to stay</h1>
 <div class="general-text">
-<p>As mentioned, there a variety of accomodation options at the venue itself but also in the nearby town which are described below. Obviously, the number of beds at the venue are limited so have included an option to specify your preference in the <a href="#sec-rsvp">RSVP</a> and we will do our best to try and make everyone’s preferred option work. If you have any questions about accomodation or need help finding something please don’t hesitate to reach out to us.</p>
+<p>As mentioned, there are a variety of accomodation options at the venue itself but also in the nearby town which are described below. Obviously, the number of beds at the venue are limited so we have included an option to specify your preference in the <a href="#sec-rsvp">RSVP</a> and we will do our best to try and make everyone’s preferred option work. If you have any questions about accomodation or need help finding something please don’t hesitate to reach out to us.</p>
 </div>
 
 
@@ -1061,6 +1061,45 @@ ul.task-list li input[type="checkbox"] {
 
 </script>
 
+/**
+ * card-flip.js
+ *
+ * Adds tap/click-to-flip support for .stay-card-wrapper elements.
+ * Drop this script into your project and load it before :
+ *   <script src="card-flip.js"></script>
+ *
+ * Works alongside the SCSS hover rule — on real pointer devices the
+ * hover still fires; on touch devices this class toggle takes over.
+ */
+
+(function () {
+  function initCardFlip() {
+    var wrappers = document.querySelectorAll('.stay-card-wrapper');
+
+    wrappers.forEach(function (wrapper) {
+      wrapper.addEventListener('click', function (e) {
+        // Don't flip if the user tapped a link on the back of the card
+        if (e.target.closest('a')) return;
+
+        wrapper.classList.toggle('is-flipped');
+      });
+
+      // Flip back if focus leaves the card (accessibility)
+      wrapper.addEventListener('focusout', function (e) {
+        if (!wrapper.contains(e.relatedTarget)) {
+          wrapper.classList.remove('is-flipped');
+        }
+      });
+    });
+  }
+
+  // Run after DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCardFlip);
+  } else {
+    initCardFlip();
+  }
+})();
 
 
 

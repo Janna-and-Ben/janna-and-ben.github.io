@@ -401,7 +401,7 @@ Of course, we recognise that not everyone will be able to make it for the whole 
 # Where to stay {.section-title}
 
 ::: {.general-text}
-As mentioned, there a variety of accomodation options at the venue itself but also in the nearby town which are described below. Obviously, the number of beds at the venue are limited so have included an option to specify your preference in the <a href="#sec-rsvp" >RSVP</a> and we will do our best to try and make everyone's preferred option work. If you have any questions about accomodation or need help finding something please don't hesitate to reach out to us.
+As mentioned, there are a variety of accomodation options at the venue itself but also in the nearby town which are described below. Obviously, the number of beds at the venue are limited so we have included an option to specify your preference in the <a href="#sec-rsvp" >RSVP</a> and we will do our best to try and make everyone's preferred option work. If you have any questions about accomodation or need help finding something please don't hesitate to reach out to us.
 :::
 
 ```{=html}
