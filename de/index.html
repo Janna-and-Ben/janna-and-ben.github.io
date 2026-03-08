@@ -555,6 +555,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="general-text">
 <p><strong>Mitbringen</strong>: Alles, was euch gefällt! Musikinstrumente, Spiele, Bücher – was auch immer euch (und anderen) Freude bereitet. Das Gelände verfügt über einen Whirlpool und eine Sauna, also vergesst eure Badesachen nicht. Es gibt auch einen Beachvolleyball-Platz und eine Tischtennisplatte – wer also einen Glücksschläger oder ein Lieblingsshirt hat, bringt sie gerne mit. Das Berliner Juliwetter kann etwas unberechenbar sein, also lohnt es sich, vor dem Einpacken die Vorhersage zu prüfen und sich entsprechend vorzubereiten – inklusive Sonnencreme, Regenjacke … oder beidem.</p>
 <p><strong>Anziehen</strong>: Alles, was euch gefällt! Tragt etwas, in dem ihr euch fantastisch fühlt und in dem ihr gut tanzen könnt.</p>
+<p><strong>Geschenke</strong>: Mit Ihnen gemeinsam zu feiern, ist für uns das Allerwichtigste. Für diejenigen, die nach Geschenken gefragt haben: Wir werden bald in ein neues Zuhause umziehen und es nach und nach zu unserem eigenen machen. Wenn Sie möchten, würde uns eine kleine Spende dafür sehr viel bedeuten.</p>
 </div>
 </section><section id="ab-auf-die-tanzfläche" class="level1 section-title"><h1 class="section-title">Ab auf die Tanzfläche</h1>
 <p class="general-text">Fügt eure Lieblingssongs zur Playlist hinzu <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=Bi-1cV5xQ0iniM2dmsz-nw&amp;pt=257fb731ce00844d27fcc2f6e8b7aac2&amp;pi=QaondvveQ9uVj" target="_blank">hier</a> hinzu</p>
@@ -985,49 +986,6 @@ ul.task-list li input[type="checkbox"] {
       }
     }
   });
-</script>
-/**
- * card-flip.js
- *
- * Adds tap/click-to-flip support for .stay-card-wrapper elements.
- * Drop this script into your project and load it before :
- *   <script src="card-flip.js"></script>
- *
- * Works alongside the SCSS hover rule — on real pointer devices the
- * hover still fires; on touch devices this class toggle takes over.
- */
-
-(function () {
-  function initCardFlip() {
-    var wrappers = document.querySelectorAll('.stay-card-wrapper');
-
-    wrappers.forEach(function (wrapper) {
-      wrapper.addEventListener('click', function (e) {
-        // Don't flip if the user tapped a link on the back of the card
-        if (e.target.closest('a')) return;
-
-        wrapper.classList.toggle('is-flipped');
-      });
-
-      // Flip back if focus leaves the card (accessibility)
-      wrapper.addEventListener('focusout', function (e) {
-        if (!wrapper.contains(e.relatedTarget)) {
-          wrapper.classList.remove('is-flipped');
-        }
-      });
-    });
-  }
-
-  // Run after DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCardFlip);
-  } else {
-    initCardFlip();
-  }
-})();
-
-
-
-
+</script><script src="card-flip.js"></script>
 </body>
 </html>
