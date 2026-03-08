@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - media/**
+    - card-flip.js
 
 website:
   site-url: https://janna-and-ben.github.io
@@ -19,7 +20,7 @@ format:
     theme: [cosmo, brand, styles.scss]
     include-after-body:
       - file: hero.html
-      - file: card-flip.js
+      - file: card-flip-include.html
     toc: false
 #page-layout: full
 
