@@ -237,7 +237,7 @@ We're only planning on getting married once so we thought why not make a bit of 
 
 Of course, we recognise that not everyone will be able to make it for the whole time, and if you can only come for part of the time e.g the dinner on the night before, or just for the ceremony, that’s absolutely fine. There is no pressure and you’re very welcome to join us for as much or as little as you’d like!
 
-Below we have provided a rough plan of what the three days will look like but it certainly isn't set in stone and there will probably be some improvisation in the timings.  
+Below we have provided a rough plan of what the three days will look like but it certainly isn't set in stone and there will probably be some improvisation, for example, we hope to do most activities outside but the weather might have other plans.  
 :::
 
 ```{=html}
@@ -429,7 +429,7 @@ As mentioned, there are a variety of accomodation options at the venue itself bu
           <div class="stay-card-back">
             <div class="card-img-overlay-bg" style="background-image: url('media/camping.jpg');"></div>
             <div class="card-body">
-              <p class="card-text">Pitch your own tent in a quiet spot at the back of the grounds. There are multiple bathrooms nearby for you to use. 10 Euro per person</p>
+              <p class="card-text">Pitch your own tent in a quiet spot at the back of the grounds. There are multiple bathrooms with showers nearby for you to use. 10 Euro per person per night</p>
             </div>
           </div>
         </div>
@@ -529,7 +529,7 @@ As mentioned, there are a variety of accomodation options at the venue itself bu
 # Let's get you on the dance floor {.section-title}
 
 ```{=html}
-<p class="general-text">	Add your favourite songs to the playlist here  <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=Bi-1cV5xQ0iniM2dmsz-nw&pt=257fb731ce00844d27fcc2f6e8b7aac2&pi=QaondvveQ9uVj" target="_blank">here</a></p>
+<p class="general-text">	Add your favourite songs to the playlist here  <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=79646422b43649cc" target="_blank">here</a></p>
 
 <div class="spotify-wrapper">
   <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/6lcvHlV9jRY6rNHZp8keDb?utm_source=generator" width="100%" height="552" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">></iframe>
