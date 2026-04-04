@@ -527,7 +527,7 @@ Wie erwähnt gibt es verschiedene Unterkunftsmöglichkeiten direkt am Veranstalt
 # Ab auf die Tanzfläche {.section-title}
 
 ```{=html}
-<p class="general-text">Fügt eure Lieblingssongs zur Playlist hinzu <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=Bi-1cV5xQ0iniM2dmsz-nw&pt=257fb731ce00844d27fcc2f6e8b7aac2&pi=QaondvveQ9uVj" target="_blank">hier</a> hinzu</p>
+<p class="general-text">Fügt eure Lieblingssongs zur Playlist hinzu <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=4eda792dfacc48a2" target="_blank">hier</a> hinzu</p>
 
 <div class="spotify-wrapper">
   <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/6lcvHlV9jRY6rNHZp8keDb?utm_source=generator" width="100%" height="552" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
