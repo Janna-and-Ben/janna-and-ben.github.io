@@ -18,9 +18,8 @@ typography:
   fonts:
     - family: Playfair Display
       source: google
-    - family: Bright Demo
-      source: file
-      files:
-        - path: fonts/bright-demo.otf
+    # - family: Bright Demo
+    #   source: file
+    #   files: fonts/bright-demo.otf
   base: Playfair Display
   headings: Playfair Display
