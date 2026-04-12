@@ -17,7 +17,7 @@ website:
 
 format:
   html:
-    theme: [cosmo, styles.scss]
+    theme: [cosmo, _brand.yml, styles.scss]
     include-after-body:
       - file: hero.html
       - file: card-flip-include.html

@@ -21,6 +21,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
   color: $brand-tan;
   text-decoration: none;
@@ -94,6 +95,7 @@ h6 {
 
 /* 🪶 Larger and more elegant typography */
 .hero h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 5rem; // increase headline size
   font-weight: 700;
   margin-bottom: 0.2rem;
@@ -103,6 +105,7 @@ h6 {
 }
 
 .hero p {
+  font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
   color: $brand-offwhite;
   margin-bottom: 0.75rem;
@@ -172,6 +175,7 @@ section:last-of-type,
 
 /* Location section - text on top, image and map side by side */
 .general-text {
+  font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
   line-height: 1.7;
   color: #333;
