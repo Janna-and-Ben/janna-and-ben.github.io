@@ -25,7 +25,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7c2788ad1b3bb4aea75aee5a77f287e6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7d6a2c6692bd98db103dde2fcf392924.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -554,13 +556,11 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Wear</strong>: Anything that tickles your fancy! Make sure to wear something that makes you feel fabulous and that allows you to dance the night away.</p>
 <p><strong>Gifts</strong>: Celebrating with you is truly the most important thing to us. For those who have already asked about gifts: we are hoping to take a bigger trip at some point in the future so if you wish, a small contribution towards this would mean a lot to us. Or perhaps you’d prefer to share your talents by contributing to the entertainment, food, or décor of the wedding.</p>
 </div>
-<!-- # Our TrauzeugInnen {.section-title}
-
-::: {.general-text}
-We are so lucky to have such wonderful people in our lives, Anna and Nico, who have agreed to be our TrauzeugInnen. They will support us in organising some of the activities and any one who wants to lend a helping hand over the wedding, so keep an eye for them and feel free to ask them if you have any questions or want to get invovled. Thank you both for being there for us!
-
-![](media/trauzeugen.jpeg){.img-fluid .rounded .shadow height="100px"}
-::: -->
+</section><section id="our-trauzeuginnen" class="level1 section-title"><h1 class="section-title">Our TrauzeugInnen</h1>
+<div class="general-text">
+<p>We are so lucky to have such wonderful people in our lives, Anna and Nico, who have agreed to be our TrauzeugInnen. They will support us in organising some of the activities and any one who wants to lend a helping hand over the wedding, so keep an eye for them and feel free to ask them if you have any questions or want to get invovled. Thank you both for being there for us!</p>
+<p><a href="media/trauzeugen.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="media/trauzeugen.jpeg" class="img-fluid rounded shadow" style="max-height: 400px;"></a></p>
+</div>
 </section><section id="lets-get-you-on-the-dance-floor" class="level1 section-title"><h1 class="section-title">Let’s get you on the dance floor</h1>
 <p class="general-text">   Add your favourite songs to the playlist here  <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=4eda792dfacc48a2" target="_blank">here</a></p>
 
@@ -1004,6 +1004,37 @@ We are so lucky to have such wonderful people in our lives, Anna and Nico, who h
 
   });
 
-</script><script src="card-flip.js"></script>
+</script><script src="card-flip.js"></script><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 </body>
 </html>

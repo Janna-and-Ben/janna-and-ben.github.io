@@ -526,13 +526,13 @@ As mentioned, there are a variety of accomodation options at the venue itself bu
 **Gifts**: Celebrating with you is truly the most important thing to us. For those who have already asked about gifts: we are hoping to take a bigger trip at some point in the future so if you wish, a small contribution towards this would mean a lot to us. Or perhaps you’d prefer to share your talents by contributing to the entertainment, food, or décor of the wedding.
 :::
 
-<!-- # Our TrauzeugInnen {.section-title}
+# Our TrauzeugInnen {.section-title}
 
 ::: {.general-text}
 We are so lucky to have such wonderful people in our lives, Anna and Nico, who have agreed to be our TrauzeugInnen. They will support us in organising some of the activities and any one who wants to lend a helping hand over the wedding, so keep an eye for them and feel free to ask them if you have any questions or want to get invovled. Thank you both for being there for us!
 
-![](media/trauzeugen.jpeg){.img-fluid .rounded .shadow height="100px"}
-::: -->
+![](media/trauzeugen.jpeg){.img-fluid .rounded .shadow style="max-height: 400px;"}
+:::
 
 # Let's get you on the dance floor {.section-title}
 

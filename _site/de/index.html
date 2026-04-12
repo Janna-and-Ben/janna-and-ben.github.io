@@ -25,7 +25,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7c2788ad1b3bb4aea75aee5a77f287e6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7d6a2c6692bd98db103dde2fcf392924.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -553,6 +555,11 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Anziehen</strong>: Alles, was euch gefällt! Tragt etwas, in dem ihr euch fantastisch fühlt und in dem ihr gut tanzen könnt.</p>
 <p><strong>Geschenke</strong>: Mit Ihnen gemeinsam zu feiern, ist für uns das Allerwichtigste. Für diejenigen, die nach Geschenken gefragt haben: Wir werden bald in ein neues Zuhause umziehen und es nach und nach zu unserem eigenen machen. Wenn Sie möchten, würde uns eine kleine Spende dafür sehr viel bedeuten.</p>
 </div>
+</section><section id="unsere-trauzeuginnen" class="level1 section-title"><h1 class="section-title">Unsere TrauzeugInnen</h1>
+<div class="general-text">
+<p>Wir sind so glücklich, so wunderbare Menschen in unserem Leben zu haben – Anna und Nico –, die sich bereit erklärt haben, unsere Trauzeugen zu sein. Sie werden uns bei der Organisation einiger Aktivitäten unterstützen, und jeder, der bei der Hochzeit mithelfen möchte, ist herzlich willkommen. Haltet also Ausschau nach ihnen und wendet euch gerne an sie, wenn ihr Fragen habt oder mitmachen möchtet. Vielen Dank euch beiden, dass ihr für uns da seid!</p>
+<p><a href="media/trauzeugen.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="media/trauzeugen.jpeg" class="img-fluid rounded shadow" style="max-height: 400px;"></a></p>
+</div>
 </section><section id="ab-auf-die-tanzfläche" class="level1 section-title"><h1 class="section-title">Ab auf die Tanzfläche</h1>
 <p class="general-text">Fügt eure Lieblingssongs zur Playlist hinzu <a href="https://open.spotify.com/playlist/6lcvHlV9jRY6rNHZp8keDb?si=4eda792dfacc48a2" target="_blank">hier</a> hinzu</p>
 
@@ -996,6 +1003,37 @@ ul.task-list li input[type="checkbox"] {
 
   });
 
-</script><script src="card-flip.js"></script>
+</script><script src="card-flip.js"></script><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 </body>
 </html>
