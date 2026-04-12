@@ -17,7 +17,7 @@ website:
 
 format:
   html:
-    theme: styles.scss
+    theme: [_brand.yml, styles.scss]
     mainfont: "Playfair Display"
     include-after-body:
       - file: hero.html
