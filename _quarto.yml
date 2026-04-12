@@ -17,7 +17,8 @@ website:
 
 format:
   html:
-    theme: [cosmo, _brand.yml, styles.scss]
+    theme: styles.scss
+    mainfont: "Playfair Display"
     include-after-body:
       - file: hero.html
       - file: card-flip-include.html
